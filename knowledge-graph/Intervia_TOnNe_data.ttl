@@ -1,0 +1,176 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://intervia.space/intervia#T1> a <https://intervia.space/intervia#TransportServiceProvider> ;
+   <https://intervia.space/intervia#onChainID> "T1" ;
+   <https://intervia.space/intervia#hasAddress> "0x0000000000000000000000000000000000000001" ;
+   <https://intervia.space/intervia#hasFullName> "Ferrovie Regionali Territoriali (FRT)" ;
+   <https://intervia.space/intervia#hasAgreementWith> <https://intervia.space/intervia#T3> .
+<https://intervia.space/intervia#T2> a <https://intervia.space/intervia#TransportServiceProvider> ;
+   <https://intervia.space/intervia#onChainID> "T2" ;
+   <https://intervia.space/intervia#hasAddress> "0x0000000000000000000000000000000000000002" ;
+   <https://intervia.space/intervia#hasFullName> "Mobilità Urbana Integrata (MUI)" .
+<https://intervia.space/intervia#T3> a <https://intervia.space/intervia#TransportServiceProvider> ;
+   <https://intervia.space/intervia#onChainID> "T3" ;
+   <https://intervia.space/intervia#hasAddress> "0x0000000000000000000000000000000000000003" ;
+   <https://intervia.space/intervia#hasFullName> "Gestione Linee Metropolitane (GLM)" ;
+   <https://intervia.space/intervia#hasAgreementWith> <https://intervia.space/intervia#T1> ;
+   <https://intervia.space/intervia#hasTemporalAgreement> _:anon-genid-79621492d9be49a4be537e39cd5fa32c-0 .
+<https://intervia.space/intervia#T4> a <https://intervia.space/intervia#TransportServiceProvider> ;
+   <https://intervia.space/intervia#onChainID> "T4" ;
+   <https://intervia.space/intervia#hasAddress> "0x0000000000000000000000000000000000000004" ;
+   <https://intervia.space/intervia#hasFullName> "Servizi Via Fiume (SVF)" ;
+   <https://intervia.space/intervia#hasTemporalAgreement> _:anon-genid-79621492d9be49a4be537e39cd5fa32c-1 .
+
+<https://intervia.space/intervia#S1> a <https://intervia.space/intervia#Stop> ;
+   <https://intervia.space/intervia#onChainID> "S1" ;
+   <https://intervia.space/intervia#hasCoordinates> "45.4745, 9.2005" ;
+   <https://intervia.space/intervia#hasFullName> "Stazione Centrale" .
+<https://intervia.space/intervia#S2> a <https://intervia.space/intervia#Stop> ;
+   <https://intervia.space/intervia#onChainID> "S2" ;
+   <https://intervia.space/intervia#hasCoordinates> "45.4650, 9.1860" ;
+   <https://intervia.space/intervia#hasFullName> "Quartiere Storico" .
+<https://intervia.space/intervia#S3> a <https://intervia.space/intervia#Stop> ;
+   <https://intervia.space/intervia#onChainID> "S3" ;
+   <https://intervia.space/intervia#hasCoordinates> "45.4980, 9.2250" ;
+   <https://intervia.space/intervia#hasFullName> "Polo Tecnologico" .
+<https://intervia.space/intervia#S5> a <https://intervia.space/intervia#Stop> ;
+   <https://intervia.space/intervia#onChainID> "S5" ;
+   <https://intervia.space/intervia#hasCoordinates> "45.4850, 9.1550" ;
+   <https://intervia.space/intervia#hasFullName> "Parco della Collina" .
+<https://intervia.space/intervia#S6> a <https://intervia.space/intervia#Stop> ;
+   <https://intervia.space/intervia#onChainID> "S6" ;
+   <https://intervia.space/intervia#hasCoordinates> "45.4050, 9.1700" ;
+   <https://intervia.space/intervia#hasFullName> "Interscambio Sud" .
+<https://intervia.space/intervia#S7> a <https://intervia.space/intervia#Stop> ;
+   <https://intervia.space/intervia#onChainID> "S7" ;
+   <https://intervia.space/intervia#hasCoordinates> "45.4120, 9.1450" ;
+   <https://intervia.space/intervia#hasFullName> "Ponte Fluviale" .
+<https://intervia.space/intervia#S8> a <https://intervia.space/intervia#Stop> ;
+   <https://intervia.space/intervia#onChainID> "S8" ;
+   <https://intervia.space/intervia#hasCoordinates> "45.3990, 9.1300" ;
+   <https://intervia.space/intervia#hasFullName> "Molo Commerciale" .
+<https://intervia.space/intervia#S9> a <https://intervia.space/intervia#Stop> ;
+   <https://intervia.space/intervia#onChainID> "S9" ;
+   <https://intervia.space/intervia#hasCoordinates> "45.5100, 9.1600" ;
+   <https://intervia.space/intervia#hasFullName> "Centro Esposizioni" .
+<https://intervia.space/intervia#S10> a <https://intervia.space/intervia#Stop> ;
+   <https://intervia.space/intervia#onChainID> "S10" ;
+   <https://intervia.space/intervia#hasCoordinates> "45.5200, 9.2400" ;
+   <https://intervia.space/intervia#hasFullName> "Zona Industriale" .
+<https://intervia.space/intervia#S11> a <https://intervia.space/intervia#Stop> ;
+   <https://intervia.space/intervia#onChainID> "S11" ;
+   <https://intervia.space/intervia#hasCoordinates> "45.4550, 9.1100" ;
+   <https://intervia.space/intervia#hasFullName> "Università Ovest" .
+<https://intervia.space/intervia#S12> a <https://intervia.space/intervia#Stop> ;
+   <https://intervia.space/intervia#onChainID> "S12" ;
+   <https://intervia.space/intervia#hasCoordinates> "45.4800, 9.1950" ;
+   <https://intervia.space/intervia#hasFullName> "Distretto Finanziario" .
+<https://intervia.space/intervia#S13> a <https://intervia.space/intervia#Stop> ;
+   <https://intervia.space/intervia#onChainID> "S13" ;
+   <https://intervia.space/intervia#hasCoordinates> "45.3850, 9.1000" ;
+   <https://intervia.space/intervia#hasFullName> "Porto Nuovo" .
+<https://intervia.space/intervia#S14> a <https://intervia.space/intervia#Stop> ;
+   <https://intervia.space/intervia#onChainID> "S14" ;
+   <https://intervia.space/intervia#hasCoordinates> "45.4300, 9.2500" ;
+   <https://intervia.space/intervia#hasFullName> "Periferia Est" .
+<https://intervia.space/intervia#S15> a <https://intervia.space/intervia#Stop> ;
+   <https://intervia.space/intervia#onChainID> "S15" ;
+   <https://intervia.space/intervia#hasCoordinates> "45.4700, 9.1650" ;
+   <https://intervia.space/intervia#hasFullName> "Mercato Vecchio" .
+<https://intervia.space/intervia#S16> a <https://intervia.space/intervia#Stop> ;
+   <https://intervia.space/intervia#onChainID> "S16" ;
+   <https://intervia.space/intervia#hasCoordinates> "45.4850, 9.2100" ;
+   <https://intervia.space/intervia#hasFullName> "Torre Panoramica" .
+<https://intervia.space/intervia#S17> a <https://intervia.space/intervia#Stop> ;
+   <https://intervia.space/intervia#onChainID> "S17" ;
+   <https://intervia.space/intervia#hasCoordinates> "45.4900, 9.1850" ;
+   <https://intervia.space/intervia#hasFullName> "Quartiere Commerciale" .
+<https://intervia.space/intervia#S18> a <https://intervia.space/intervia#Stop> ;
+   <https://intervia.space/intervia#onChainID> "S18" ;
+   <https://intervia.space/intervia#hasCoordinates> "45.4200, 9.2200" ;
+   <https://intervia.space/intervia#hasFullName> "Deposito Treni" .
+
+<https://intervia.space/intervia#L1E> a <https://intervia.space/intervia#Service> ;
+   <https://intervia.space/intervia#hasOwner> <https://intervia.space/intervia#T1> ;
+   <https://intervia.space/intervia#followsRoute> <https://intervia.space/intervia#S1> , <https://intervia.space/intervia#S3> , <https://intervia.space/intervia#S10> , <https://intervia.space/intervia#S12> , <https://intervia.space/intervia#S13> , <https://intervia.space/intervia#S18> ;
+   <https://intervia.space/intervia#onChainID> "L1E" ;
+   <https://intervia.space/intervia#hasSchedule> "Frequency: Every 15 minutes" ;
+   <https://intervia.space/intervia#merkleHash> "0x6d01ddc8468875f76b584bc5bb66b3aa6c3905d17e38186c8f2b343c7f8a067e" ;
+   <https://intervia.space/intervia#hasFullName> "L1E (Express)" ;
+   <https://intervia.space/intervia#hasColor> "#EB483F" ;
+   <https://intervia.space/intervia#maxDurationMinutes> 120 .
+<https://intervia.space/intervia#L2B> a <https://intervia.space/intervia#Service> ;
+   <https://intervia.space/intervia#hasOwner> <https://intervia.space/intervia#T2> ;
+   <https://intervia.space/intervia#followsRoute> <https://intervia.space/intervia#S1> , <https://intervia.space/intervia#S5> , <https://intervia.space/intervia#S7> , <https://intervia.space/intervia#S10> , <https://intervia.space/intervia#S11> , <https://intervia.space/intervia#S14> , <https://intervia.space/intervia#S15> , <https://intervia.space/intervia#S17> ;
+   <https://intervia.space/intervia#onChainID> "L2B" ;
+   <https://intervia.space/intervia#hasSchedule> "Frequency: Every 20 minutes" ;
+   <https://intervia.space/intervia#merkleHash> "0x5cd962be08d435c2a2efd08a98dabd2ee4eb50a6b3b078c0fe1ef43e4e04246b" ;
+   <https://intervia.space/intervia#hasFullName> "L2B (Bus)" ;
+   <https://intervia.space/intervia#hasColor> "#CBC540" ;
+   <https://intervia.space/intervia#maxDurationMinutes> 90 .
+<https://intervia.space/intervia#L3M> a <https://intervia.space/intervia#Service> ;
+   <https://intervia.space/intervia#hasOwner> <https://intervia.space/intervia#T3> ;
+   <https://intervia.space/intervia#followsRoute> <https://intervia.space/intervia#S1> , <https://intervia.space/intervia#S2> , <https://intervia.space/intervia#S3> , <https://intervia.space/intervia#S11> , <https://intervia.space/intervia#S12> , <https://intervia.space/intervia#S16> ;
+   <https://intervia.space/intervia#onChainID> "L3M" ;
+   <https://intervia.space/intervia#hasSchedule> "Frequency: Every 7 minutes" ;
+   <https://intervia.space/intervia#merkleHash> "0x1d0d4f55b4afa784a966af811c6585b464d38c7d1c9a8ce866dc6b13d1938c94" ;
+   <https://intervia.space/intervia#hasFullName> "L3M (Metro)" ;
+   <https://intervia.space/intervia#hasColor> "#7137F5" ;
+   <https://intervia.space/intervia#maxDurationMinutes> 90 .
+<https://intervia.space/intervia#L4T> a <https://intervia.space/intervia#Service> ;
+   <https://intervia.space/intervia#hasOwner> <https://intervia.space/intervia#T2> ;
+   <https://intervia.space/intervia#followsRoute> <https://intervia.space/intervia#S2> , <https://intervia.space/intervia#S6> , <https://intervia.space/intervia#S9> , <https://intervia.space/intervia#S11> , <https://intervia.space/intervia#S12> , <https://intervia.space/intervia#S15> , <https://intervia.space/intervia#S17> ;
+   <https://intervia.space/intervia#onChainID> "L4T" ;
+   <https://intervia.space/intervia#hasSchedule> "Frequency: Every 12 minutes" ;
+   <https://intervia.space/intervia#merkleHash> "0x8ff95569f397558e412e3eba504b686649ffb1fdb6e2f24ffbaeeff74c7e1548" ;
+   <https://intervia.space/intervia#hasFullName> "L4T (Tram)" ;
+   <https://intervia.space/intervia#hasColor> "#45972A" ;
+   <https://intervia.space/intervia#maxDurationMinutes> 75 .
+<https://intervia.space/intervia#L5R> a <https://intervia.space/intervia#Service> ;
+   <https://intervia.space/intervia#hasOwner> <https://intervia.space/intervia#T1> ;
+   <https://intervia.space/intervia#followsRoute> <https://intervia.space/intervia#S3> , <https://intervia.space/intervia#S6> , <https://intervia.space/intervia#S12> , <https://intervia.space/intervia#S18> , <https://intervia.space/intervia#S4> ;
+   <https://intervia.space/intervia#onChainID> "L5R" ;
+   <https://intervia.space/intervia#hasSchedule> "Frequency: Every 60 minutes" ;
+   <https://intervia.space/intervia#merkleHash> "0xf244ee6fd3657fd0e3a8aa71df16b0ba5fc8066d3502991abaddd3f3faf3803c" ;
+   <https://intervia.space/intervia#hasFullName> "L5R (Regionale)" ;
+   <https://intervia.space/intervia#hasColor> "#EE8231" ;
+   <https://intervia.space/intervia#maxDurationMinutes> 180 .
+<https://intervia.space/intervia#S4> a <https://intervia.space/intervia#Stop> ;
+   <https://intervia.space/intervia#onChainID> "S0" ;
+   <https://intervia.space/intervia#hasCoordinates> "45.5500, 9.2700" ;
+   <https://intervia.space/intervia#hasFullName> "Aeroporto Zenith" .
+<https://intervia.space/intervia#L6F> a <https://intervia.space/intervia#Service> ;
+   <https://intervia.space/intervia#hasOwner> <https://intervia.space/intervia#T4> ;
+   <https://intervia.space/intervia#followsRoute> <https://intervia.space/intervia#S7> , <https://intervia.space/intervia#S8> , <https://intervia.space/intervia#S15> , <https://intervia.space/intervia#S17> ;
+   <https://intervia.space/intervia#onChainID> "L6F" ;
+   <https://intervia.space/intervia#hasSchedule> "Frequency: Every 45 minutes" ;
+   <https://intervia.space/intervia#merkleHash> "0x0b9c239a6fc0cb13531e874994a43b39f4dc225771ab15d680a88557470269e2" ;
+   <https://intervia.space/intervia#hasFullName> "L6F (Fluviale)" ;
+   <https://intervia.space/intervia#hasColor> "#459BF8" ;
+   <https://intervia.space/intervia#maxDurationMinutes> 60 .
+<https://intervia.space/intervia#TICKET_192bbb5198eaae01c3dadac41c13fc5844c9a64ac1165d3d513859334dd9f94e> a <https://intervia.space/intervia#Ticket> ;
+   <https://intervia.space/intervia#hasOwner> "0xB266856A3E1108aa44011aAAeB5a2996431Fb7aC" ;
+   <https://intervia.space/intervia#onChainID> "0x192bbb5198eaae01c3dadac41c13fc5844c9a64ac1165d3d513859334dd9f94e" ;
+   <https://intervia.space/intervia#forService> <https://intervia.space/intervia#L1E> .
+<https://intervia.space/intervia#TICKET_726292be1c4ca1b95aac68f8773be32ad71d9bc5f734284f0eda892df9b982fa> a <https://intervia.space/intervia#Ticket> ;
+   <https://intervia.space/intervia#hasOwner> "0xB266856A3E1108aa44011aAAeB5a2996431Fb7aC" ;
+   <https://intervia.space/intervia#onChainID> "0x726292be1c4ca1b95aac68f8773be32ad71d9bc5f734284f0eda892df9b982fa" ;
+   <https://intervia.space/intervia#forService> <https://intervia.space/intervia#L1E> ;
+   <https://intervia.space/intervia#ticketType> "r" .
+<https://intervia.space/intervia#TICKET_baf8ce2071678fbe047968855e7e6b0f07688b856add4b7e9b6b8a19506b8964> a <https://intervia.space/intervia#Ticket> ;
+   <https://intervia.space/intervia#hasOwner> "0xB266856A3E1108aa44011aAAeB5a2996431Fb7aC" ;
+   <https://intervia.space/intervia#onChainID> "0xbaf8ce2071678fbe047968855e7e6b0f07688b856add4b7e9b6b8a19506b8964" ;
+   <https://intervia.space/intervia#forService> <https://intervia.space/intervia#L1E> ;
+   <https://intervia.space/intervia#ticketType> "r" .
+<https://intervia.space/intervia#TICKET_a7960c9280fc6a99ea40f2b123f4c20621e724eb874a454ce97cf3109a67edbf> a <https://intervia.space/intervia#Ticket> ;
+   <https://intervia.space/intervia#hasOwner> "0xB266856A3E1108aa44011aAAeB5a2996431Fb7aC" ;
+   <https://intervia.space/intervia#onChainID> "0xa7960c9280fc6a99ea40f2b123f4c20621e724eb874a454ce97cf3109a67edbf" ;
+   <https://intervia.space/intervia#forService> <https://intervia.space/intervia#L1E> ;
+   <https://intervia.space/intervia#ticketType> "u" .
+<https://intervia.space/intervia#TICKET_373b966fbe50dfe2f35c3a7deb235cfacb98ff47bce99a1af8d3490953335fef> a <https://intervia.space/intervia#Ticket> ;
+   <https://intervia.space/intervia#hasOwner> "0x90F79bf6EB2c4f870365E785982E1f101E93b906" ;
+   <https://intervia.space/intervia#onChainID> "0x373b966fbe50dfe2f35c3a7deb235cfacb98ff47bce99a1af8d3490953335fef" ;
+   <https://intervia.space/intervia#forService> <https://intervia.space/intervia#L1E> ;
+   <https://intervia.space/intervia#ticketType> "r" .

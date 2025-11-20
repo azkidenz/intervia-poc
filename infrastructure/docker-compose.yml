@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  besu:
+    image: hyperledger/besu:latest
+    container_name: intervia-tsp-example-node
+    restart: always
+
+    ports:
+      - "8545:8545"       # HTTP RPC
+      - "30303:30303"     # P2P TCP
+      - "30303:30303/udp" # P2P UDP
+    
+
+    volumes:
+      - /home/ubuntu/intervia/genesis.json:/opt/besu/config/genesis.json
+      
+      - /home/ubuntu/intervia/data:/opt/besu/data 
+
+    command:
+      --data-path=/opt/besu/data
+      --genesis-file=/opt/besu/config/genesis.json
+      --rpc-http-enabled
+      --rpc-http-api=ETH,NET,QBFT,ADMIN
+      --host-allowlist="*"
+      --rpc-http-cors-origins="*"
+      --rpc-http-port=8545
+      --profile=ENTERPRISE
+      
+      --p2p-host "192.0.2.5" \
+      --bootnodes "enode://a1b2c3d4e5f67890a1b2c3d4e5f67890a1b2c3d4e5f67890a1b2c3d4e5f67890a1b2c3d4e5f67890a1b2c3d4e5f67890@127.0.0.1:30303"

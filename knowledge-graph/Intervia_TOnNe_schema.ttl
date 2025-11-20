@@ -1,0 +1,57 @@
+@prefix : <http://api.stardog.com/> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix so: <https://schema.org/> .
+
+<https://intervia.space/intervia#Organisation> a rdfs:Class ;
+   rdfs:comment "Generic entity within the transport system." .
+
+<https://intervia.space/intervia#TransportServiceProvider> a rdfs:Class ;
+   rdfs:subClassOf <https://intervia.space/intervia#Organisation> ;
+   rdfs:comment "Concrete implementation of a TSP (validators)." .
+
+<https://intervia.space/intervia#Stop> a rdfs:Class ;
+   rdfs:comment "Represents a physical stop or station." .
+
+<https://intervia.space/intervia#Service> a rdfs:Class ;
+   rdfs:comment "Represents a route or transport line (e.g., Express Line)." .
+
+<https://intervia.space/intervia#Ticket> a rdfs:Class ;
+   rdfs:comment "The ticket asset (token/contract)." .
+
+<https://intervia.space/intervia#hasOwner> a owl:ObjectProperty ;
+   rdfs:domain <https://intervia.space/intervia#Service> ;
+   rdfs:range <https://intervia.space/intervia#TransportServiceProvider> ;
+   rdfs:comment "The TSP responsible for this Service." .
+
+<https://intervia.space/intervia#offersService> a owl:ObjectProperty ;
+   rdfs:domain <https://intervia.space/intervia#TransportServiceProvider> ;
+   rdfs:range <https://intervia.space/intervia#Service> .
+
+<https://intervia.space/intervia#followsRoute> a owl:ObjectProperty ;
+   rdfs:domain <https://intervia.space/intervia#Service> ;
+   rdfs:range <https://intervia.space/intervia#Stop> ;
+   rdfs:comment "The sequence of stops that make up the route." .
+
+<https://intervia.space/intervia#onChainID> a owl:DatatypeProperty ;
+   rdfs:range xsd:string ;
+   rdfs:comment "The unique ID of the Solidity contract." .
+
+<https://intervia.space/intervia#hasAddress> a owl:DatatypeProperty ;
+   rdfs:range xsd:string ;
+   rdfs:comment "The public Ethereum address of the TSP." .
+
+<https://intervia.space/intervia#hasCoordinates> a owl:DatatypeProperty ;
+   rdfs:range xsd:string ;
+   rdfs:comment "Geographical coordinates of the Stop." .
+
+<https://intervia.space/intervia#hasSchedule> a owl:DatatypeProperty ;
+   rdfs:range xsd:string ;
+   rdfs:comment "Schedule and frequency of the Service." .
+
+<https://intervia.space/intervia#merkleHash> a owl:DatatypeProperty ;
+   rdfs:range xsd:string ;
+   rdfs:comment "The root hash read from the TOnNe contract for off-chain validation." .
