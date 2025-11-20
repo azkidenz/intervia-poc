@@ -1,26 +1,20 @@
-# --- Node / JS ---
 node_modules/
 npm-debug.log
 
-# --- Hardhat ---
 artifacts/
 cache/
 
-# --- Environment ---
 .env
 .env.local
 
-# --- Blockchain Data (NON CARICARE MAI) ---
 infrastructure/data/geth/chaindata/
 infrastructure/data/geth/lightchaindata/
 infrastructure/data/geth/nodes/
 
-# --- System / IDE ---
 .DS_Store
 .vscode/
 .idea/
 
-# --- Chiavi SSH e Credenziali ---
 **/*.pem
 **/*.key
 **/*.ppk
