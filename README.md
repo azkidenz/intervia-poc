@@ -8,7 +8,7 @@
 This project demonstrates a hybrid Ontochain architecture for public transport ticketing, combining the immutability of Hyperledger Besu with the semantic flexibility of  Distributed Knowledge Graph to ensure Data Integrity and Interoperability.
 
 <p align="center">
-  <img src="figures/intervia.svg" width="400" />
+  <img src="figures/intervia.svg" width="600" />
 </p>
 
 A test version of Intervia's endpoints is available at [doc.intervia.space](https://doc.intervia.space).
