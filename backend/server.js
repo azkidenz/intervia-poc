@@ -56,7 +56,9 @@ app.post('/issueTicket', async (req, res) => {
         
         console.log(`Ticket ${ticketId} issued (On-Chain).`);
     } catch (e) {
-        return res.status(500).json({ success: false, message: `On-Chain failure: ${e.message}` });
+        console.error("Issuance error:", e.message);
+        return res.status(500).json({ success: false, message: "On-Chain failure occurred." });
+        
     }
 
     try {
@@ -122,7 +124,8 @@ app.post('/activateTicket', async (req, res) => {
         res.status(200).json({ success: true, message: "Ticket activated." });
 
     } catch (e) {
-        res.status(500).json({ success: false, message: e.message });
+        res.status(500).json({ success: false, message: "A verification error occurred." });
+        console.error(e.message);
     }
 });
 
@@ -168,7 +171,8 @@ app.post('/inspectTicket', async (req, res) => {
         });
 
     } catch (e) {
-        res.status(500).json({ success: false, message: e.message });
+        res.status(500).json({ success: false, message: "A verification error occurred." });
+        console.error(e.message);
     }
 });
 
